@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祭祀祖先</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/qiqing.css">
+    <script type="text/javascript">
+        function namechange() {
+            var familyname = sessionStorage.getItem("familyname");
+            var str = document.getElementById("family").innerHTML; 
+            var res = str.replace("姓", familyname);
+            document.getElementById("family").innerHTML = res;
+        }
+        window.onload = namechange;
+        </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-42CGBP6SLN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-42CGBP6SLN');
+    </script>
+</head>
+
+<body class="jisi_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="index.html" class="btn btn-dark btn-lg" style="margin-top: 15%;">清明</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col zuxian" id="family" style="margin-top: 10%;">
+                祈請姓氏歷代祖先
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="containerr">
+                    <div class="red flame"></div>
+                    <div class="orange flame"></div>
+                    <div class="yellow flame"></div>
+                    <div class="white flame"></div>
+                    <div class="blue circle"></div>
+                  </div>
+            </div>
+            <div class="col-6">
+                <img class = "paiwei img-fluid" src="assets/img/paiweitrans.png" alt="">
+            </div>
+            <div class="col-3">
+                <div class="containerr">
+                    <div class="red flame"></div>
+                    <div class="orange flame"></div>
+                    <div class="yellow flame"></div>
+                    <div class="white flame"></div>
+                    <div class="blue circle"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

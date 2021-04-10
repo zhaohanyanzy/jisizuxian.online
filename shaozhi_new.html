@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点灯</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/shaozhi.css">
+    <link href="css/fire.css" rel="stylesheet" />
+    <script>
+        function switch_fire(){
+            if ( document.getElementById("bodyy").classList.contains('fire-off') ){
+                document.getElementById("bodyy").classList.remove('fire-off');
+                document.getElementById("switch").classList.remove('switched');
+            }else{
+                document.getElementById("bodyy").classList.add('fire-off');
+                document.getElementById("switch").classList.add('switched');
+            }
+        }
+    </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-42CGBP6SLN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'G-42CGBP6SLN');
+        </script>
+</head>
+
+<body class="shaozhi_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="index.html" class="btn btn-dark btn-lg" style="margin-top: 15%;">清明</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7"></div>
+            <div class="col-5 gushi" style="background-color: rgba(0, 0, 0, 0.5);">
+                <p>《清明》</p>
+                <p> [唐] 杜牧</p>
+                <p>清明时节雨纷纷, 路上行人欲断魂。</p>
+                <p>借问酒家何处有, 牧童遥指杏花村。</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bodyy" id="bodyy">
+                <div class="fire-on"></div>
+
+                <div class="switch-wrap">
+                    <div id="switch">
+                        <div id="circle" onclick="switch_fire()"></div>
+                    </div>
+                </div>
+
+                <div class="section-center">
+                    <div class="wood-circle"></div>
+                    <div class="wood"></div>
+                    <div class="fire">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="smoke">
+                        <span class="s-0"></span>
+                        <span class="s-1"></span>
+                        <span class="s-2"></span>
+                        <span class="s-3"></span>
+                        <span class="s-4"></span>
+                        <span class="s-5"></span>
+                        <span class="s-6"></span>
+                        <span class="s-7"></span>
+                        <span class="s-8"></span>
+                        <span class="s-9"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
